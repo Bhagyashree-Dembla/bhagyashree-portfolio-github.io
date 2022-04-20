@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: steelblue;
+    /* width: 13vw; */
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: transform 0.5s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 12px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 33px 30px 33px 30px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.main {
+    padding: 10px 10px 10px 10px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+}
+
+.infoContainer {
+    /* background-color:lightsteelblue; */
+    height: 40vw;
+    width: 80vw;
+    margin: 80px 80px 80px 80px;
+    display: flex;
+}
+
+.devPic img {
+    width: 15em;
+    border-radius: 50%;
+    margin: 0px 10px 100px 200px;
+}
+
+.devInfo {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 60px;
+}
+
+.about {
+    font-size: 30px;
+    text-align: center;
+}
+
+.moreAbout {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 15%;
+    font-weight: bold;
+    font-size: medium;
+    margin: 25px 10px 10px 10px;
+    color: whitesmoke;
+    background-color: steelblue;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: steelblue;
+    background-color: whitesmoke;
+}
+
+.btn-sm{
+    font-size: 14px; 
+    padding: 6px;
+}
+
+.contactForm {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 80px 80px 80px 80px;
+}
+
+.contactForm h1 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.contactForm form div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div input {
+    width: 16vw;
+    border-radius: 4px;
+    margin: 3px 0px 0px 0px;
+    padding: 3px;
+}
+
+#form-check {
+    flex-direction: row;
+    margin: 10px;
+}
+
+#form-check input {
+    width: 39px;
+}
+
+#emailHelp {
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0px 10px;
+    padding: 0px 0px;
+
+}
+
+.c1{
+    color: red;
+}
+
+.resume{
+    margin: 20px 20px 20px 80px;
+}
+.introContainer{
+    width: 800px;
+    margin: 80px 80px 80px 80px;
+}
+.introContainer h2{
+    text-align: center;
+    margin: 40px 80px 20px 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.introContainer h1{
+    text-align: center;
+    margin: 40px 80px 20px 100px;
+    color:midnightblue;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.intro{
+    margin: 20px 20px 20px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.list{
+    style: none;
+}
+
+#more {
+    display: none;
+}
+
+.sidebarGo{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+
+
+.hamburger{
+    position:absolute;
+    cursor: pointer;
+    top: 10px;
+    left:10px;
+}
+
+.cross{
+    margin-left: 178px;
+}
+
+
+@media (max-width: 1280px) 
+{
+    *{
+
+    }
+    .devPic {
+        display: none;
+    }
+    .intro, .infoContainer, .contactForm{
+        margin : 12px;
+    }
+}
